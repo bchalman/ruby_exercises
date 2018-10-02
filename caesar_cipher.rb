@@ -10,6 +10,6 @@ def caesar_cipher (string, shift)
   end.join
 end
 
-puts caesar_cipher("Test!", 3)
-puts caesar_cipher("Can it go backwards?", -5)
-puts caesar_cipher("Handle end of range: X, y", 4)
+# puts caesar_cipher("Test!", 3)
+# puts caesar_cipher("Can it go backwards?", -5)
+# puts caesar_cipher("Handle end of range: X, y", 4)
