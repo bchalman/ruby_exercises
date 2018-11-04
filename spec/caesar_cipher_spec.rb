@@ -3,7 +3,7 @@ require './caesar_cipher.rb'
 describe '#caesar_cipher' do
   context "when a string is given" do
     it "Shifts one-word string right" do
-      expect(caesar_cipher("hello", 3)).to eq("hhoor")
+      expect(caesar_cipher("hello", 3)).to eq("khoor")
     end
 
     it "shifts one-word string left" do

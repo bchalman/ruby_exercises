@@ -64,8 +64,15 @@ module Enumerable
   end
 
   def my_inject(default = nil)
-    default ? total = default : total = self[0]
-    for i in self[1...self.length] do
+    if default
+      start_index = 0
+      total = default
+    else
+      start_index = 1
+      total = self[0]
+    end
+
+    for i in self[start_index...self.length] do
       total = yield(total, i)
     end
     total
